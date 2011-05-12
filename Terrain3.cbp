@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Terrain3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Terrain3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Terrain3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="/usr/include" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add library="glfw" />
+			<Add library="GL" />
+			<Add library="pthread" />
+			<Add library="GLEW" />
+			<Add library="X11" />
+			<Add library="Xrandr" />
+			<Add directory="/usr/lib" />
+		</Linker>
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/CloudsMaterial.h" />
+		<Unit filename="include/EarthMaterial.h" />
+		<Unit filename="include/Material.h" />
+		<Unit filename="include/Math/Matrix4.h" />
+		<Unit filename="include/Math/Quaternion.h" />
+		<Unit filename="include/Math/Rotation.h" />
+		<Unit filename="include/Math/Vector3D.h" />
+		<Unit filename="include/Math/Vector4.h" />
+		<Unit filename="include/MatrixStack.h" />
+		<Unit filename="include/RenderEngine.h" />
+		<Unit filename="include/Renderable.h" />
+		<Unit filename="include/Shader.h" />
+		<Unit filename="include/Sphere.h" />
+		<Unit filename="include/TGATexture.h" />
+		<Unit filename="include/TextShader.h" />
+		<Unit filename="include/Texture.h" />
+		<Unit filename="include/Triangle.h" />
+		<Unit filename="include/project.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shaders/clouds.fragment" />
+		<Unit filename="shaders/clouds.vertex" />
+		<Unit filename="shaders/earth.fragment" />
+		<Unit filename="shaders/earth.vertex" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/CloudsMaterial.cpp" />
+		<Unit filename="src/EarthMaterial.cpp" />
+		<Unit filename="src/Material.cpp" />
+		<Unit filename="src/Math/Matrix4.cpp" />
+		<Unit filename="src/Math/Quaternion.cpp" />
+		<Unit filename="src/Math/Rotation.cpp" />
+		<Unit filename="src/Math/Vector3D.cpp" />
+		<Unit filename="src/Math/Vector4.cpp" />
+		<Unit filename="src/MatrixStack.cpp" />
+		<Unit filename="src/RenderEngine.cpp" />
+		<Unit filename="src/Renderable.cpp" />
+		<Unit filename="src/Shader.cpp" />
+		<Unit filename="src/Sphere.cpp" />
+		<Unit filename="src/TGATexture.cpp" />
+		<Unit filename="src/TextShader.cpp" />
+		<Unit filename="src/Texture.cpp" />
+		<Unit filename="src/Triangle.cpp" />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,22 @@
+#version 330
+
+in vec3 vVertex;
+in vec3 vNormal;
+in vec3 vTexCoord;
+
+uniform mat4 mvpMatrix;
+uniform mat4 mvMatrix;
+uniform mat3 normalMatrix;
+uniform vec3 lightPosition;
+
+out vec2 vVaryingTexCoords;
+out vec3 vVaryingNormal;
+out vec3 vVaryingLightDir;
+
+void main(void)
+{
+    vVaryingNormal = vec3(mvMatrix * vec4(vNormal, 0.0));
+    vVaryingLightDir = vec3(mvMatrix * vec4(lightPosition, 0.0));
+    vVaryingTexCoords = vec2(vTexCoord);
+    gl_Position = mvpMatrix * vec4(vVertex, 1.0);
+}

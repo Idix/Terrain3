@@ -1,0 +1,401 @@
+# depslib dependency file v1.0
+1305138989 source:/home/jerome/workspace/Terrain3/main.cpp
+	<GL/glew.h>
+	<GL/glfw.h>
+	<iostream>
+	<stdlib.h>
+	"RenderEngine.h"
+	"Camera.h"
+
+1241166300 /usr/include/GL/glfw.h
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1285867037 /usr/include/GL/gl.h
+	"gl_mangle.h"
+	<stdlib.h>
+	<windows.h>
+	<GL/mesa_wgl.h>
+	<GL/glext.h>
+
+1285867037 /usr/include/GL/gl_mangle.h
+
+1295646257 /usr/include/stdlib.h
+	<features.h>
+	<stddef.h>
+	<bits/waitflags.h>
+	<bits/waitstatus.h>
+	<xlocale.h>
+	<sys/types.h>
+	<alloca.h>
+	<bits/stdlib.h>
+	<bits/stdlib-ldbl.h>
+
+1295646243 /usr/include/features.h
+	<bits/predefs.h>
+	<sys/cdefs.h>
+	<gnu/stubs.h>
+
+1295646243 /usr/include/bits/predefs.h
+
+1295646264 /usr/include/sys/cdefs.h
+	<features.h>
+	<bits/wordsize.h>
+
+1295646257 /usr/include/bits/wordsize.h
+
+1295646243 /usr/include/gnu/stubs.h
+	<bits/wordsize.h>
+	<gnu/stubs-32.h>
+	<gnu/stubs-64.h>
+
+1295646282 /usr/include/gnu/stubs-64.h
+
+1295646262 /usr/include/bits/waitflags.h
+
+1295646262 /usr/include/bits/waitstatus.h
+	<endian.h>
+
+1295646260 /usr/include/endian.h
+	<features.h>
+	<bits/endian.h>
+	<bits/byteswap.h>
+
+1295646260 /usr/include/bits/endian.h
+
+1295646260 /usr/include/bits/byteswap.h
+	<bits/wordsize.h>
+
+1295646244 /usr/include/xlocale.h
+
+1295646262 /usr/include/sys/types.h
+	<features.h>
+	<bits/types.h>
+	<time.h>
+	<stddef.h>
+	<endian.h>
+	<sys/select.h>
+	<sys/sysmacros.h>
+	<bits/pthreadtypes.h>
+
+1295646262 /usr/include/bits/types.h
+	<features.h>
+	<bits/wordsize.h>
+	<bits/typesizes.h>
+
+1295646262 /usr/include/bits/typesizes.h
+
+1295646261 /usr/include/time.h
+	<features.h>
+	<stddef.h>
+	<bits/time.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<bits/types.h>
+	<xlocale.h>
+
+1295646261 /usr/include/bits/time.h
+	<bits/types.h>
+	<bits/types.h>
+
+1295646264 /usr/include/sys/select.h
+	<features.h>
+	<bits/types.h>
+	<bits/select.h>
+	<bits/sigset.h>
+	<time.h>
+	<bits/time.h>
+
+1295646264 /usr/include/bits/select.h
+	<bits/wordsize.h>
+
+1295646257 /usr/include/bits/sigset.h
+
+1295646262 /usr/include/sys/sysmacros.h
+	<features.h>
+
+1295646262 /usr/include/bits/pthreadtypes.h
+	<bits/wordsize.h>
+
+1295646257 /usr/include/alloca.h
+	<features.h>
+	<stddef.h>
+
+1295646257 /usr/include/bits/stdlib.h
+
+1295646257 /usr/include/bits/stdlib-ldbl.h
+
+1285867037 /usr/include/GL/glext.h
+	<windows.h>
+	<stddef.h>
+	<inttypes.h>
+	<inttypes.h>
+	<inttypes.h>
+	<stdint.h>
+	<stdint.h>
+	<inttypes.h>
+
+1295646257 /usr/include/inttypes.h
+	<features.h>
+	<stdint.h>
+	<stddef.h>
+
+1295646257 /usr/include/stdint.h
+	<features.h>
+	<bits/wchar.h>
+	<bits/wordsize.h>
+
+1295646260 /usr/include/bits/wchar.h
+
+1285867030 /usr/include/GL/glu.h
+	"glu_mangle.h"
+	<GL/gl.h>
+
+1285867030 /usr/include/GL/glu_mangle.h
+
+1303490100 /usr/include/GL/glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1303492235 source:/home/jerome/workspace/Terrain3/Texture.cpp
+	"Texture.h"
+
+1303492578 /home/jerome/workspace/Terrain3/Texture.h
+	<GL/glew.h>
+	<GL/glfw.h>
+	<iostream>
+
+1304631869 source:/home/jerome/workspace/Terrain3/src/TGATexture.cpp
+	"TGATexture.h"
+
+1304699521 /home/jerome/workspace/Terrain3/include/TGATexture.h
+	"project.h"
+	<Texture.h>
+
+1304699544 /home/jerome/workspace/Terrain3/include/Texture.h
+	"project.h"
+	<iostream>
+
+1304718484 source:/home/jerome/workspace/Terrain3/src/Texture.cpp
+	"Texture.h"
+
+1304775867 source:/home/jerome/workspace/Terrain3/src/Shader.cpp
+	"Shader.h"
+
+1304775846 /home/jerome/workspace/Terrain3/include/Shader.h
+	"project.h"
+	<iostream>
+
+1303853417 source:/home/jerome/workspace/Terrain3/src/TextShader.cpp
+	"TextShader.h"
+	<fstream>
+
+1304699532 /home/jerome/workspace/Terrain3/include/TextShader.h
+	"project.h"
+	<string>
+	"Shader.h"
+
+1305229704 source:/home/jerome/workspace/Terrain3/src/RenderEngine.cpp
+	"RenderEngine.h"
+	<math.h>
+
+1304891712 /home/jerome/workspace/Terrain3/include/RenderEngine.h
+	"project.h"
+	"Renderable.h"
+	"Sphere.h"
+	"Camera.h"
+	"MatrixStack.h"
+	"EarthMaterial.h"
+	"CloudsMaterial.h"
+
+1295646260 /usr/include/string.h
+	<features.h>
+	<stddef.h>
+	<xlocale.h>
+	<bits/string.h>
+	<bits/string2.h>
+	<bits/string3.h>
+
+1295646260 /usr/include/bits/string.h
+
+1295646260 /usr/include/bits/string2.h
+	<endian.h>
+	<bits/types.h>
+	<stdlib.h>
+
+1295646260 /usr/include/bits/string3.h
+
+1304699552 /home/jerome/workspace/Terrain3/include/Triangle.h
+	"project.h"
+	<Renderable.h>
+
+1304699494 /home/jerome/workspace/Terrain3/include/Renderable.h
+	"project.h"
+
+1304269992 source:/home/jerome/workspace/Terrain3/src/Renderable.cpp
+	"Renderable.h"
+
+1304291617 source:/home/jerome/workspace/Terrain3/src/Triangle.cpp
+	"Triangle.h"
+
+1305229638 source:/home/jerome/workspace/Terrain3/src/Camera.cpp
+	"Camera.h"
+	"Math/Rotation.h"
+	<math.h>
+
+1305229336 /home/jerome/workspace/Terrain3/include/Camera.h
+	"project.h"
+	"Math/Vector3D.h"
+	"Math/Matrix4.h"
+	"MatrixStack.h"
+
+1305061889 /home/jerome/workspace/Terrain3/include/Math/Vector3D.h
+	"project.h"
+
+1263839526 /usr/include/GL/glut.h
+	"freeglut_std.h"
+
+1263839526 /usr/include/GL/freeglut_std.h
+	<Windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1304699434 /home/jerome/workspace/Terrain3/include/Math/Rotation.h
+	"project.h"
+	"Vector3D.h"
+
+1304270641 source:/home/jerome/workspace/Terrain3/src/Math/Quaternion.cpp
+	"Math/Quaternion.h"
+
+1304699421 /home/jerome/workspace/Terrain3/include/Math/Quaternion.h
+	"project.h"
+
+1304453220 source:/home/jerome/workspace/Terrain3/src/Math/Rotation.cpp
+	"Math/Rotation.h"
+	"Math/Quaternion.h"
+	<math.h>
+
+1295646256 /usr/include/math.h
+	<features.h>
+	<bits/huge_val.h>
+	<bits/huge_valf.h>
+	<bits/huge_vall.h>
+	<bits/inf.h>
+	<bits/nan.h>
+	<bits/mathdef.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls.h>
+	<bits/mathcalls.h>
+	<bits/mathinline.h>
+
+1295646256 /usr/include/bits/huge_val.h
+	<endian.h>
+
+1295646256 /usr/include/bits/huge_valf.h
+
+1295646256 /usr/include/bits/huge_vall.h
+
+1295646256 /usr/include/bits/inf.h
+
+1295646256 /usr/include/bits/nan.h
+	<endian.h>
+
+1295646256 /usr/include/bits/mathdef.h
+	<bits/wordsize.h>
+
+1295646256 /usr/include/bits/mathcalls.h
+
+1295646256 /usr/include/bits/mathinline.h
+	<bits/wordsize.h>
+
+1305061884 source:/home/jerome/workspace/Terrain3/src/Math/Vector3D.cpp
+	"Math/Vector3D.h"
+	<math.h>
+
+1305064742 source:/home/jerome/workspace/Terrain3/src/Math/Matrix4.cpp
+	"Math/Matrix4.h"
+	<string.h>
+	<math.h>
+
+1305138853 /home/jerome/workspace/Terrain3/include/Math/Matrix4.h
+	"project.h"
+	"Math/Vector4.h"
+	"Math/Vector3D.h"
+
+1295646260 /usr/include/strings.h
+	<features.h>
+	<stddef.h>
+	<xlocale.h>
+
+1304891602 source:/home/jerome/workspace/Terrain3/src/MatrixStack.cpp
+	"MatrixStack.h"
+	<math.h>
+
+1304891624 /home/jerome/workspace/Terrain3/include/MatrixStack.h
+	"project.h"
+	"Math/Matrix4.h"
+	"Math/Vector3D.h"
+
+1304699514 /home/jerome/workspace/Terrain3/include/Sphere.h
+	"project.h"
+	<Renderable.h>
+
+1305057148 source:/home/jerome/workspace/Terrain3/src/Sphere.cpp
+	"Sphere.h"
+	<math.h>
+	<assert.h>
+
+1295646254 /usr/include/assert.h
+	<features.h>
+
+1304703318 /home/jerome/workspace/Terrain3/include/project.h
+	<GL/glew.h>
+	<GL/glfw.h>
+
+1304775886 source:/home/jerome/workspace/Terrain3/src/Material.cpp
+	"Material.h"
+
+1304775757 /home/jerome/workspace/Terrain3/include/Material.h
+	"project.h"
+	"Texture.h"
+	"Shader.h"
+	"Math/Matrix4.h"
+
+1304895322 source:/home/jerome/workspace/Terrain3/src/EarthMaterial.cpp
+	"EarthMaterial.h"
+
+1305062008 /home/jerome/workspace/Terrain3/include/EarthMaterial.h
+	"project.h"
+	<Material.h>
+	"TextShader.h"
+	"TGATexture.h"
+	"Math/Vector3D.h"
+
+1304894241 source:/home/jerome/workspace/Terrain3/src/CloudsMaterial.cpp
+	"CloudsMaterial.h"
+
+1305061105 /home/jerome/workspace/Terrain3/include/CloudsMaterial.h
+	"project.h"
+	<Material.h>
+	"TGATexture.h"
+	"TextShader.h"
+	"Math/Vector3D.h"
+
+1305064802 source:/home/jerome/workspace/Terrain3/src/Math/Vector4.cpp
+	"Math/Vector4.h"
+	<string.h>
+	<math.h>
+
+1305064923 /home/jerome/workspace/Terrain3/include/Math/Vector4.h
+	"project.h"
+	"Math/Vector3D.h"
+

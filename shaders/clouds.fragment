@@ -1,0 +1,16 @@
+#version 330
+
+in vec2 vVaryingTexCoords;
+in vec3 vVaryingNormal;
+in vec3 vVaryingLightDir;
+out vec4 vFragColor;
+
+uniform sampler2D cloudMap;
+
+void main(void)
+{
+    float intensity = dot(normalize(vVaryingNormal), normalize(vVaryingLightDir));
+    vFragColor = texture(cloudMap, vVaryingTexCoords);
+    vFragColor.a = vFragColor.r;
+    vFragColor.rgb *= intensity;
+}

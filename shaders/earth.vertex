@@ -1,0 +1,28 @@
+#version 330
+
+in vec4 vVertex;
+in vec3 vNormal;
+in vec2 vTexCoord;
+
+uniform mat4 mvpMatrix;
+uniform mat4 mvMatrix;
+uniform mat3 normalMatrix;
+uniform vec3 lightPosition;
+
+out vec2 vVaryingTexCoords;
+out vec3 vVaryingNormal;
+out vec3 vVaryingLightDir;
+
+void main(void)
+{
+    vVaryingNormal = vec3(mvMatrix * vec4(vNormal, 0.0));
+
+    // Get vertex position in eye coordinates
+    vec4 vPosition4 = mvMatrix * vVertex;
+    vec3 vPosition3 = vPosition4.xyz / vPosition4.w;
+
+    vVaryingLightDir = normalize(lightPosition - vPosition3);
+
+    vVaryingTexCoords = vTexCoord;
+    gl_Position = mvpMatrix * vVertex;
+}
