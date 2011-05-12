@@ -28,7 +28,7 @@ RenderEngine::~RenderEngine()
 
 void RenderEngine::render(double elapsed)
 {
-	GLfloat currentTime = glfwGetTime()*0.0f;
+	GLfloat currentTime = glfwGetTime()*0.2f;
     m_Camera.initModelViewStack(m_MatrixStack);
     // World coordinates
     Math::Vector4 lightEyePosition = Math::Vector4(cos(currentTime)*10.0f, 0.0f, sin(currentTime)*10.0f, 1.0);
@@ -38,20 +38,16 @@ void RenderEngine::render(double elapsed)
 
 	m_EarthMaterial->setMvpMatrix(m_Camera.getProjection()*m_MatrixStack.getCurrentMatrix());
 	m_EarthMaterial->setMvMatrix(m_MatrixStack.getCurrentMatrix());
-	//m_EarthMaterial->setNormalMatrix(m_MatrixStack.getCurrentMatrix().getMatrix3Raw());
 	m_EarthMaterial->setLightPosition(lightEyePosition.extractVector3());
-
     m_EarthMaterial->bind();
     m_Renderable->render();
 
-	/*
     m_MatrixStack.scale(1.002f, 1.002f, 1.002f);
 	m_CloudsMaterial->setMvpMatrix(m_Camera.getProjection()*m_MatrixStack.getCurrentMatrix());
 	m_CloudsMaterial->setMvMatrix(m_MatrixStack.getCurrentMatrix());
     m_CloudsMaterial->setLightPosition(lightEyePosition.extractVector3());
     m_CloudsMaterial->bind();
     m_Renderable->render();
-    */
 
     glfwSwapBuffers();
 }
