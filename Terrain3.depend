@@ -203,7 +203,7 @@
 	<string>
 	"Shader.h"
 
-1305231739 source:/home/jerome/workspace/Terrain3/src/RenderEngine.cpp
+1305231861 source:/home/jerome/workspace/Terrain3/src/RenderEngine.cpp
 	"RenderEngine.h"
 	<math.h>
 
@@ -370,23 +370,23 @@
 	"Shader.h"
 	"Math/Matrix4.h"
 
-1304895322 source:/home/jerome/workspace/Terrain3/src/EarthMaterial.cpp
+1305319154 source:/home/jerome/workspace/Terrain3/src/EarthMaterial.cpp
 	"EarthMaterial.h"
 
-1305062008 /home/jerome/workspace/Terrain3/include/EarthMaterial.h
+1305319103 /home/jerome/workspace/Terrain3/include/EarthMaterial.h
 	"project.h"
 	<Material.h>
 	"TextShader.h"
-	"TGATexture.h"
+	"PngTexture.h"
 	"Math/Vector3D.h"
 
-1304894241 source:/home/jerome/workspace/Terrain3/src/CloudsMaterial.cpp
+1305236018 source:/home/jerome/workspace/Terrain3/src/CloudsMaterial.cpp
 	"CloudsMaterial.h"
 
-1305061105 /home/jerome/workspace/Terrain3/include/CloudsMaterial.h
+1305235991 /home/jerome/workspace/Terrain3/include/CloudsMaterial.h
 	"project.h"
 	<Material.h>
-	"TGATexture.h"
+	"PngTexture.h"
 	"TextShader.h"
 	"Math/Vector3D.h"
 
@@ -398,4 +398,215 @@
 1305064923 /home/jerome/workspace/Terrain3/include/Math/Vector4.h
 	"project.h"
 	"Math/Vector3D.h"
+
+1305237347 source:/home/jerome/workspace/Terrain3/src/PngTexture.cpp
+	"PngTexture.h"
+	<fstream>
+
+1305233000 /home/jerome/workspace/Terrain3/include/PngTexture.h
+	<Texture.h>
+	<png.h>
+
+1277811050 /usr/include/png.h
+	"zlib.h"
+	"pngconf.h"
+	<crtdbg.h>
+
+1274113647 /usr/include/zlib.h
+	"zconf.h"
+
+1274113647 /usr/include/zconf.h
+	<windows.h>
+	"zlibdefs.h"
+	<sys/types.h>
+
+1274113647 /usr/include/zlibdefs.h
+	<sys/types.h>
+	<unistd.h>
+	<unixio.h>
+
+1295646262 /usr/include/unistd.h
+	<features.h>
+	<bits/posix_opt.h>
+	<bits/environments.h>
+	<bits/types.h>
+	<stddef.h>
+	<bits/confname.h>
+	<getopt.h>
+	<bits/unistd.h>
+
+1295646262 /usr/include/bits/posix_opt.h
+
+1295646262 /usr/include/bits/environments.h
+	<bits/wordsize.h>
+
+1295646262 /usr/include/bits/confname.h
+
+1295646262 /usr/include/getopt.h
+	<ctype.h>
+
+1295646254 /usr/include/ctype.h
+	<features.h>
+	<bits/types.h>
+	<endian.h>
+	<xlocale.h>
+
+1295646262 /usr/include/bits/unistd.h
+
+1277811050 /usr/include/pngconf.h
+	"pngusr.h"
+	"config.h"
+	<windows.h>
+	<stdio.h>
+	<stdio.h>
+	<sys/types.h>
+	<setjmp.h>
+	<strings.h>
+	<string.h>
+	<stdlib.h>
+	<fp.h>
+	<math.h>
+	<m68881.h>
+	<mem.h>
+	<alloc.h>
+	<malloc.h>
+	<time.h>
+	<dos.h>
+
+1295646258 /usr/include/stdio.h
+	<features.h>
+	<stddef.h>
+	<bits/types.h>
+	<libio.h>
+	<stdarg.h>
+	<bits/stdio_lim.h>
+	<bits/sys_errlist.h>
+	<getopt.h>
+	<bits/stdio.h>
+	<bits/stdio2.h>
+	<bits/stdio-ldbl.h>
+
+1295646258 /usr/include/libio.h
+	<_G_config.h>
+	<stdarg.h>
+	<sys/cdefs.h>
+	<bits/stdio-lock.h>
+	<shlib-compat.h>
+	<bits/libio-ldbl.h>
+
+1295646258 /usr/include/_G_config.h
+	<bits/types.h>
+	<stddef.h>
+	<wchar.h>
+	<gconv.h>
+
+1295646260 /usr/include/wchar.h
+	<features.h>
+	<stdio.h>
+	<stdarg.h>
+	<bits/wchar.h>
+	<stddef.h>
+	<wctype.h>
+	<xlocale.h>
+	<xlocale.h>
+	<xlocale.h>
+	<wctype.h>
+	<bits/wchar2.h>
+	<bits/wchar-ldbl.h>
+
+1295646265 /usr/include/wctype.h
+	<features.h>
+	<bits/types.h>
+	<wchar.h>
+	<endian.h>
+	<xlocale.h>
+
+1295646260 /usr/include/bits/wchar2.h
+
+1295646260 /usr/include/bits/wchar-ldbl.h
+
+1295646243 /usr/include/gconv.h
+	<features.h>
+	<wchar.h>
+	<stddef.h>
+
+1295646258 /usr/include/bits/stdio-lock.h
+	<bits/libc-lock.h>
+	<lowlevellock.h>
+
+1295646243 /usr/include/bits/libc-lock.h
+	<pthread.h>
+	<stddef.h>
+	<lowlevellock.h>
+	<tls.h>
+	<pthread-functions.h>
+	<errno.h>
+	<gnu/option-groups.h>
+	<bp-sym.h>
+
+1295646270 /usr/include/pthread.h
+	<features.h>
+	<endian.h>
+	<sched.h>
+	<time.h>
+	<bits/pthreadtypes.h>
+	<bits/setjmp.h>
+	<bits/wordsize.h>
+
+1295646262 /usr/include/sched.h
+	<features.h>
+	<bits/types.h>
+	<stddef.h>
+	<time.h>
+	<bits/sched.h>
+
+1295646262 /usr/include/bits/sched.h
+
+1295646257 /usr/include/bits/setjmp.h
+	<bits/wordsize.h>
+
+1295646257 /usr/include/errno.h
+	<features.h>
+	<bits/errno.h>
+
+1295646257 /usr/include/bits/errno.h
+	<linux/errno.h>
+
+1300480070 /usr/include/linux/errno.h
+	<asm/errno.h>
+
+1300480071 /usr/include/asm/errno.h
+	<asm-generic/errno.h>
+
+1300480069 /usr/include/asm-generic/errno.h
+	<asm-generic/errno-base.h>
+
+1300480069 /usr/include/asm-generic/errno-base.h
+
+1295646278 /usr/include/gnu/option-groups.h
+
+1295646258 /usr/include/bits/libio-ldbl.h
+
+1295646258 /usr/include/bits/stdio_lim.h
+
+1295646258 /usr/include/bits/sys_errlist.h
+
+1295646258 /usr/include/bits/stdio.h
+
+1295646258 /usr/include/bits/stdio2.h
+
+1295646258 /usr/include/bits/stdio-ldbl.h
+
+1295646257 /usr/include/setjmp.h
+	<features.h>
+	<bits/setjmp.h>
+	<bits/sigset.h>
+	<bits/setjmp2.h>
+
+1295646257 /usr/include/bits/setjmp2.h
+
+1295646259 /usr/include/malloc.h
+	<features.h>
+	<stddef.h>
+	<stdio.h>
 

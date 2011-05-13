@@ -2,11 +2,11 @@
 
 CloudsMaterial::CloudsMaterial()
 {
-	TGATexture* texture;
+	PngTexture* texture;
 	m_Shader = new TextShader("shaders/clouds");
 	m_Shader->compile();
-	texture = new TGATexture();
-	texture->load("textures/EarthClouds.tga");
+	texture = new PngTexture();
+	texture->load("textures/EarthClouds.png");
 	appendTexture("cloudMap", texture);
 }
 

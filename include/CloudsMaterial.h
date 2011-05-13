@@ -3,7 +3,7 @@
 
 #include "project.h"
 #include <Material.h>
-#include "TGATexture.h"
+#include "PngTexture.h"
 #include "TextShader.h"
 #include "Math/Vector3D.h"
 

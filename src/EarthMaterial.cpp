@@ -2,29 +2,29 @@
 
 EarthMaterial::EarthMaterial()
 {
-	TGATexture* texture;
+	PngTexture* texture;
 	m_Shader = new TextShader("shaders/earth");
 	m_Shader->compile();
 	showError("shader compile");
 
 	m_Shader->setUniform3f("specularColor", 0.98f, 0.89f, 0.88f);
 
-	texture = new TGATexture();
-	texture->load("textures/EarthMap.tga");
+	texture = new PngTexture();
+	texture->load("textures/EarthMap.png");
 	appendTexture("colorMap", texture);
 	showError("texture colorMap");
 
-	texture = new TGATexture();
-	texture->load("textures/EarthNight.tga");
+	texture = new PngTexture();
+	texture->load("textures/EarthNight.png");
 	appendTexture("nightColorMap", texture);
 	showError("texture nightColorMap");
 
-	texture = new TGATexture();
-	texture->load("textures/EarthSpec.tga");
+	texture = new PngTexture();
+	texture->load("textures/EarthSpec.png");
 	appendTexture("specularMap", texture);
 
-	texture = new TGATexture();
-	texture->load("textures/EarthClouds.tga");
+	texture = new PngTexture();
+	texture->load("textures/EarthClouds.png");
 	appendTexture("cloudMap", texture);
 }
 

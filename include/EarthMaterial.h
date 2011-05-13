@@ -4,7 +4,7 @@
 #include "project.h"
 #include <Material.h>
 #include "TextShader.h"
-#include "TGATexture.h"
+#include "PngTexture.h"
 #include "Math/Vector3D.h"
 
 class EarthMaterial : public Material
