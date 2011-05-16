@@ -8,7 +8,7 @@ RenderEngine::RenderEngine()
     glfwGetWindowSize(&width, &height);
     m_Camera.perspective(PI/2, width/height, 0.1, 10.0);
     showError("Camera");
-    m_Renderable = new Tube(8, 4);
+    m_Renderable = new Tube(8, 10);
     showError("Tube");
     m_RetroMaterial = new RetroMaterial();
 

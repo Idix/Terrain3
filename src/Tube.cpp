@@ -17,8 +17,8 @@ Tube::Tube(unsigned int segments, unsigned int lengthSegments) : m_Segments(segm
     	{
     		vVertex[currentIndex+4] = vVertex[currentIndex+0] = cos(TWOPI*i/segments);
     		vVertex[currentIndex+5] = vVertex[currentIndex+1] = sin(TWOPI*i/segments);
-    		vVertex[currentIndex+2] = j+0.0f;
-    		vVertex[currentIndex+6] = j+1.0f;
+    		vVertex[currentIndex+2] = 0.0f-j;
+    		vVertex[currentIndex+6] = 1.0f-j;
     		vVertex[currentIndex+7] = vVertex[currentIndex+3] = 1.0f;
 
     		vTexCoord[currentIndex/2+0] = (j%2)+0.0f;
