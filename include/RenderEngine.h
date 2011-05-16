@@ -5,6 +5,8 @@
 
 #include "Renderable.h"
 #include "Sphere.h"
+#include "Tube.h"
+#include "RetroMaterial.h"
 #include "Camera.h"
 #include "MatrixStack.h"
 #include "EarthMaterial.h"
@@ -25,6 +27,7 @@ class RenderEngine
         MatrixStack m_MatrixStack;
         EarthMaterial* m_EarthMaterial;
         CloudsMaterial* m_CloudsMaterial;
+        RetroMaterial* m_RetroMaterial;
 };
 
 #endif // RENDERENGINE_H

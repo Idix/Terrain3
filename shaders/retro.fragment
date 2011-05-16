@@ -1,0 +1,10 @@
+#version 330
+
+in vec2 vVaryingTexCoords;
+
+out vec4 vFragColor;
+
+void main(void)
+{
+	vFragColor = vec4(vVaryingTexCoords.s, vVaryingTexCoords.t, 0.0, 1.0);
+}

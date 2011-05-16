@@ -8,11 +8,9 @@ RenderEngine::RenderEngine()
     glfwGetWindowSize(&width, &height);
     m_Camera.perspective(PI/2, width/height, 0.1, 10.0);
     showError("Camera");
-    m_Renderable = new Sphere(98);
-    showError("Sphere");
-    m_EarthMaterial = new EarthMaterial();
-    showError("Material");
-    m_CloudsMaterial = new CloudsMaterial();
+    m_Renderable = new Tube(8, 4);
+    showError("Tube");
+    m_RetroMaterial = new RetroMaterial();
 
     glEnable(GL_CULL_FACE);
     glEnable(GL_DEPTH_TEST);
@@ -36,6 +34,7 @@ void RenderEngine::render(double elapsed)
     lightEyePosition = m_MatrixStack.getCurrentMatrix() * lightEyePosition;
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+	/*
 	m_EarthMaterial->setMvpMatrix(m_Camera.getProjection()*m_MatrixStack.getCurrentMatrix());
 	m_EarthMaterial->setMvMatrix(m_MatrixStack.getCurrentMatrix());
 	m_EarthMaterial->setLightPosition(lightEyePosition.extractVector3());
@@ -47,6 +46,13 @@ void RenderEngine::render(double elapsed)
 	m_CloudsMaterial->setMvMatrix(m_MatrixStack.getCurrentMatrix());
     m_CloudsMaterial->setLightPosition(lightEyePosition.extractVector3());
     m_CloudsMaterial->bind();
+    m_Renderable->render();
+    */
+
+	m_RetroMaterial->setMvpMatrix(m_Camera.getProjection()*m_MatrixStack.getCurrentMatrix());
+	m_RetroMaterial->setMvMatrix(m_MatrixStack.getCurrentMatrix());
+    m_RetroMaterial->bind();
+
     m_Renderable->render();
 
     glfwSwapBuffers();

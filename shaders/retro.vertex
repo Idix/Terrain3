@@ -1,0 +1,15 @@
+#version 330
+
+in vec4 vVertex;
+in vec2 vTexCoord;
+
+uniform mat4 mvpMatrix;
+uniform mat4 mvMatrix;
+
+out vec2 vVaryingTexCoords;
+
+void main(void)
+{
+    vVaryingTexCoords = vTexCoord;
+    gl_Position = mvpMatrix * vVertex;
+}
