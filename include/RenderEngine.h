@@ -22,7 +22,7 @@ class RenderEngine
         void recompileShaders();
     protected:
     private:
-        Renderable* m_Renderable;
+        Tube* m_Tubes[3];
         Camera m_Camera;
         MatrixStack m_MatrixStack;
         EarthMaterial* m_EarthMaterial;

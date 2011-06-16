@@ -11,5 +11,8 @@ out vec2 vVaryingTexCoords;
 void main(void)
 {
     vVaryingTexCoords = vTexCoord;
-    gl_Position = mvpMatrix * vVertex;
+    vec4 vertex = vVertex;
+    vec4 worldVertex = vVertex * mvMatrix;
+    vertex.x += cos(worldVertex.z)*0.1;
+    gl_Position = mvpMatrix * vertex;
 }

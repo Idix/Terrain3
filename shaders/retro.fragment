@@ -6,10 +6,7 @@ out vec4 vFragColor;
 
 void main(void)
 {
-	float dist = min(1.0, abs(vVaryingTexCoords.s*2-1.0));
-	dist = pow(dist, 16);
+	float dist = pow(min(1.0, abs(vVaryingTexCoords.s*2-1.0)), 24) + pow(min(1.0, abs(vVaryingTexCoords.t*2-1.0)), 24);
+	dist = min(1.0, dist+0.1);
 	vFragColor = vec4(dist, 0.0, 0.0, 1.0);
-	dist = min(1.0, abs(vVaryingTexCoords.t*2-1.0));
-	dist = pow(dist, 16);
-	vFragColor.r += dist;
 }
