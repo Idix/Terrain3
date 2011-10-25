@@ -1,0 +1,12 @@
+#version 330
+
+in vec4 vVertex;
+out vec2 vVaryingPos;
+out vec2 vVaryingTex;
+
+void main(void)
+{
+    vVaryingTex = vVaryingPos = vec2(vVertex);
+    vVaryingTex = vVaryingTex * 0.5 + 0.5;
+    gl_Position = vVertex;
+}

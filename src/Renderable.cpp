@@ -11,12 +11,14 @@ Renderable::~Renderable()
     glDeleteVertexArrays(1, &m_VertexArray);
 }
 
-void Renderable::render() const
+void Renderable::render(GLuint mode) const
 {
     if (m_VertexCount)
     {
         glBindVertexArray(m_VertexArray);
-        glDrawArrays(GL_TRIANGLES, 0, m_VertexCount);
+        showError("Before");
+        glDrawArrays(mode, 0, m_VertexCount);
+        showError("After");
         glBindVertexArray(0);
     }
 }

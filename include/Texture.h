@@ -7,7 +7,6 @@ class Texture
 {
 private:
 	GLuint id;
-	GLint lastTex;
 protected:
 	Texture(void);
 
